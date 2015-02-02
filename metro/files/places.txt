@@ -1,0 +1,187 @@
+1	Jahangirpuri	Kali Bari
+2	Adarsh Nagar	Adarsh Nagar Gurudwara
+3	Azadpur	Vainshavi Temple
+4	Model Town	Alpana Cinema
+5	Model Town	Gauri Temple
+6	GTB Nagar	Chhatrasal Stadium
+7	Vidhan Sabha	Flag Staff Tower
+8	Vishwa Vidyalaya	Delhi University
+9	Civil Lines	Qudsia Bagh
+10	Kashmere Gate	St.James Church Mahatama
+11	Kashmere Gate	Gandhi Park
+12	Chandni Chowk	Red Fort
+13	Chandni Chowk	Chandni Chowk Market
+14	Chawri Bazar	Jama Masjid
+15	New Delhi	Shankar's International Dolls Museum
+16	Rajiv Chowk	Connaught Place Art Today
+17	Rajiv Chowk	Odeon Cinema
+18	Patel Chowk	Metro Museum
+19	Patel Chowk	Jantar Mantar
+20	Central Secretariat	Sansad Bhavan
+21	Central Secretariat	Cathedral Church
+22	Udyog Bhawan	Rashtrapati Bhavan
+23	Race Course	Lodhi Gardens
+24	Race Course	Lodhi Gardens
+25	Jor Bagh	Safdarjung's Tomb
+26	INA	Sarojini Nagar Market
+27	AIIMS	AIIMS Hospital
+28	AIIMS	South Extension Market
+29	Green Park	Green Park Market
+30	Hauz Khas	Haus Khas Village
+31	Hauz Khas	IIT Delhi
+32	Malviya Nagar	Select City Mall
+33	Saket	Indian Garden Sai Mandir
+34	Qutub Minar	Qutab Minar
+35	Chhatarpur	Chhattarpur Temple
+36	Sultanpur	Ashna Gallery
+37	Sultanpur	Shiv Gauri Mandir
+38	Ghitorni	Old Hanuman Mandir
+39	Ghitorni	Zorba The Budha
+40	Arjan Garh	Latoria Baba Temple
+41	Guru Dronacharya	Dronacharya College of Engineering
+42	MG Road	Cyber Hub
+43	Sikandarpur	Ambience Mall
+44	IFFCO Chowk	Kingdom of Dreams
+45	HUDA City Centre	Huda City
+46	HUDA City Centre	Lemon Tree Hotel
+47	Mandi House	Shri Ram Center for Performing Arts
+48	Mandi House	NSD Open Air
+49	Janpath	Janpath Market
+50	Janpath	LIC Office
+51	Khan Market	India International Centre
+52	Khan Market	Khan Market
+53	Khan Market	India Gate
+54	Jawaharlal Nehru Stadium	Jawaharlal Nehru Stadium
+55	Jawaharlal Nehru Stadium	Humayun's Tomb
+56	Jawaharlal Nehru Stadium	Nizamuddin Dargah
+57	Jangpura	Eros Cinema
+58	Jangpura	Silver Oak Park
+59	Lajpat Nagar	Lajpat Nagar Market
+60	Lajpat Nagar	Defence Colony Market
+61	Moolchand	Greater Kailash Market
+62	Kailash Colony	Kailash Colony Market
+63	Nehru Place	ISKCON Temple/Lotus Temple
+64	Nehru Place	Nehru Place Market
+65	Kalkaji Mandir	Kalkaji Temple
+66	Govind Puri	Kalkaji Devi
+67	Govind Puri	IIIT Delhi
+68	Govind Puri	Jamia Millia Islamia University
+69	Okhla	Okhla Industrial Area
+70	Jasola Apollo	Apollo Hospital
+71	Sarita Vihar	Sarita Vihar Market
+72	Mohan Estate	Prachin Mata Mandir
+73	Tughlakabad	Tughlaqabad Fort
+74	Badarpur	Seble Cinema
+75	Badarpur	Shiv Mandir
+76	Dilshad Garden	Ayyapa Temple
+77	Dilshad Garden	Mata Mandir
+78	Jhilmil	Shitla Mandir
+79	Jhilmil	Apsara Cinema
+80	Mansarovar Park	Mansarovar Park
+81	Shahdara	Gainand Cinema
+82	Welcome	Shri Ram Mandir
+83	Seelampur	Jharkhandi Temple
+84	Shastri Park	Salimgarh Fort
+85	Tis Hazari	St. Stephens Church
+86	Tis Hazari	Old Shri Mata Pathwari Temple
+87	Pul Bangash	Pracheen Shri Jhulle Wala Temple
+88	Pratap Nagar	Roshnara Tomb
+89	Shastri Nagar	Usha Mata Mandir
+90	Inderlok	Ashoka Garden
+91	Inderlok	Shri Shiv Shani Mandir
+92	Kanhiya Nagar	Maharishi Dayanand Park
+93	Keshav Puram	Shri Vidhya Mandir
+94	Netaji Subhash Place	Fun Cinemas
+95	Netaji Subhash Place	Dilli Haat
+96	Kohat Enclave	Kali Temple
+97	Pitam Pura	Shri dharam Mandir
+98	Rohini East	M2K Mall
+99	Rohini West	Japanese Park
+100	Rithala	Adventure Island
+101	Kirti Nagar	Kirti Nagar Market
+102	Kirti Nagar	Art Mall
+103	Satguru Ramsingh Marg	Jai Jwala Durga Temple
+104	Ashok Park Main	Sanatam Dharm Durga Mandir
+105	Punjabi Bagh East	Shaheed Dhingra Park
+106	Shivaji Park	Ramtirth Mandir
+107	Madipur	Mata Vaishno Mandir
+108	Paschim Vihar East	Bajaj Mandir
+109	Paschim Vihar West	Kala Mandir
+110	Peera Garhi	Sanatam Dharm Durga Mandir
+111	Surajmal Stadium	Sita Mata Mandir
+112	Nangloi	Lokesh Cinema
+113	Nangloi	Railway Station
+114	Nangloi	Maa Sheetla Mandir
+115	Rajdhani Park	Shree Durga Mata Mandir
+116	Mundka	Shobha Cinema
+117	Udyog Nagar	National Museum
+118	Aerocity	Mangal Mahadevan Nirla Kenan Fort
+119	Noida City Center	Shoprix Mall
+120	Golf Course	War Memorial
+121	Golf Course	Shaheed Samarak
+122	Botanical Garden	Botanical Garden
+123	Noida Sector 16	Krishna Market
+124	Noida Sector 15	Gurudwara Sahib
+125	New Ashok Nagar	Peer Baba ki Mazaah Dargah
+126	Mayur Vihar Extension	East End Temple Alka Cinema
+127	Mayur Vihar-I	Shubha Shree Sidhi Vinayak Temple
+128	Shivaji Stadium	Gurdwara Bangla Sahib
+129	Dhaula Kuan	South Campus
+130	Dhaula Kuan	Satya Niketan Market
+131	IGI Airport	Indira Gandhi International Airport
+132	Noida Sector 18	Great India Palace
+133	Noida Sector 18	Center Stage Mall
+134	Akshardham	Swaminarayan Akshardham Temple
+135	Kaushambi	Kanha Shyam Hotel
+136	Anand Vihar	Pacific Mall
+137	Anand Vihar	Ram Temple
+138	Karkarduma	PVR EDM
+139	Karkarduma	Swaminarayan Akshardham Temple
+140	Nirman Vihar	Poorva Sanskrithik Kendra
+141	Laxmi Nagar	Shri Shiv Mandir
+142	Yamuna Bank	Narender Dev Park
+143	Yamuna Bank	Sanjay Park
+144	Barakhamba Road	Religare Arts Initiative
+145	Barakhamba Road	Mirza Ghalib Havelli
+146	Barakhamba Road	Big Odean Cinemas
+147	Rajendra Place	Rachna Capital Center
+148	Rajendra Place	Nij Thou Mandir
+149	Patel Nagar	Vivek Movie Hall
+150	Patel Nagar	Rock Garden Delhi
+151	Shadipur	Rock Garden Delhi
+152	Moti Nagar	Fun Cinemas
+153	Moti Nagar	Shri Satya Narayan Temple
+154	Ramesh Nagar	Shree Surya Mandir
+155	Tagore Garden	Cinemax
+156	Tagore Garden	Shri Umeshwar Mandir Sabha
+157	Tilak Nagar	Tilak Nagar Market
+158	Tilak Nagar	Tilak Nagar Market
+159	Uttam Nagar East	Amphi Theatre
+160	Uttam Nagar West	Shani Dev and Shiv Mandir
+161	Nawada	Shri Bhola Mandir
+162	Vaishali	Shiv Mandir
+163	Preet Vihar	CBSE Office
+164	Indraprastha	Purana Quila
+165	Pragati Maidan	Rajghat Shanti Vana
+166	Ramakrishna Ashram Marg	Laxmi Narayan Temple
+167	Jhandewalan	Jhandewalan Temple
+168	Karol Bagh	Karol Bagh Market
+169	Rajouri Garden	Rajouri Mall
+170	Subhash Nagar	Pacific Mall
+171	Janakpuri East	Dilli Haat
+173	Janakpuri West	Dilli Haat
+174	Janakpuri West	District Center
+175	Dwarka Mor	Shri Vishwakarma Temple
+176	Dwarka	Shri Vishwakarma Temple
+177	Dwarka Sector 14	National Law University
+178	Dwarka Sector 13	Maharitunjay Mahadev Mandi
+179	Dwarka Sector 13	Radisson Blu Hotel
+180	Dwarka Sector 12	Sector 12 Market
+181	Dwarka Sector 12	Dwarkadeesh Temple
+182	Dwarka Sector 11	Netaji Subhas Institute of Technology
+183	Dwarka Sector 10	Guru Gobind Singh Indraprastha University
+184	Dwarka Sector 9	Indira Gandhi International Airport
+185	Dwarka Sector 9	Sector 9 Market
+186	Dwarka Sector 8	Chougan Masani Mata Mandir
+187	Dwarka Sector 21	Chougan Masani Mata Mandir
+188	Dwarka Sector 21	Shiv Mandir and Dharamshaala

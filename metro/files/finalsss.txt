@@ -1,0 +1,95 @@
+
+
+CREATE FUNCTION find_path( pFromsname VARCHAR(50), pTosname VARCHAR(50) ) 
+  DECLARE vfromsid, vtosid, vsid, vcost, vpathid,c INT; 
+  DECLARE vFromsname, vTosname VARCHAR(50); 
+  DECLARE l varchar(15);
+  BEGIN 
+  -- null out path info in the nodes table 
+  UPDATE hello_stationinfo SET pathid = NULL,cost = NULL,Calculated = 0; 
+  -- find sids referenced by input params 
+  SET vfromsid = ( SELECT sid FROM hello_stationinfo WHERE sname = pFromsname ); 
+  IF vfromsid IS NULL THEN 
+    SELECT CONCAT('From node name ', pFromsname, ' not found.' );  
+  ELSE 
+    BEGIN 
+      -- start at source node 
+      SET vsid = vfromsid; 
+      SET vtosid = ( SELECT sid FROM hello_stationinfo WHERE sname = pTosname ); 
+      IF vtosid IS NULL THEN 
+        SELECT CONCAT('From node name ', pTosname, ' not found.' ); 
+      ELSE 
+        BEGIN 
+          -- calculate path costs till all are done 
+          UPDATE hello_stationinfo SET cost=0 WHERE sid = vfromsid; 
+          WHILE vsid IS NOT NULL DO 
+            BEGIN 
+              UPDATE  
+                hello_stationinfo AS source 
+                JOIN hello_path AS paths ON paths.fromsid = source.sid 
+                JOIN hello_stationinfo AS dest ON dest.sid = Paths.tosid 
+              SET dest.cost = CASE 
+                                WHEN dest.cost IS NULL THEN source.cost + Paths.cost 
+                                WHEN source.cost + Paths.cost < dest.cost THEN source.cost + Paths.cost 
+                                ELSE dest.cost 
+                              END, 
+                  dest.pathid = Paths.pathid 
+              WHERE  
+                source.sid = vsid 
+                AND (dest.cost IS NULL OR source.cost + Paths.cost < dest.cost) 
+                AND dest.Calculated = 0; 
+        
+              UPDATE hello_stationinfo SET Calculated = 1 WHERE sid = vsid; 
+
+              SET vsid = ( SELECT sid FROM hello_stationinfo 
+                              WHERE Calculated = 0 AND cost IS NOT NULL 
+                              ORDER BY cost LIMIT 1 
+                            ); 
+            END; 
+          END WHILE; 
+        END; 
+      END IF; 
+    END; 
+  END IF; 
+  IF EXISTS( SELECT 1 FROM hello_stationinfo WHERE sid = vtosid AND cost IS NULL ) THEN 
+    -- problem,  cannot proceed 
+    SELECT CONCAT( 'Node ',vsid, ' missed.' ); 
+  ELSE 
+    BEGIN 
+      -- write itinerary to map table 
+      DROP TEMPORARY TABLE IF EXISTS map; 
+      CREATE TABLE map ( 
+        RowID INT PRIMARY KEY AUTO_INCREMENT, 
+        Fromsname VARCHAR(50), 
+        Tosname VARCHAR(50), 
+        Line varchar(15),
+        cost INT 
+      ) ENGINE=MEMORY; 
+      WHILE vfromsid <> vtosid DO 
+        BEGIN 
+          SELECT  
+            source.sname,dest.sname,dest.cost,dest.pathid
+            INTO vFromsname, vTosname, vcost, vpathid
+          FROM  
+            hello_stationinfo AS dest
+            JOIN hello_path AS Paths ON Paths.pathid = dest.pathid 
+            JOIN hello_stationinfo AS source ON source.sid = Paths.fromsid 
+          WHERE dest.sid = vtosid; 
+            select count(*) from hello_station where sname=vFromsname into c;
+            if c=1
+            then
+                select line from hello_station where sname=vFromsname into l;
+            else
+                select line from hello_station where sname=vFromsname and line in (select line from hello_station where sname=vTosname) into l;
+            end if;
+          INSERT INTO Map(Fromsname,Tosname,cost,Line) VALUES(vFromsname,vTosname,vcost,l); 
+           
+          SET vtosid = (SELECT fromsid FROM hello_path WHERE pathid = vpathid); 
+        END; 
+      END WHILE; 
+      SELECT Fromsname,Tosname,cost,Line FROM Map ORDER BY RowID DESC; 
+      DROP TABLE Map; 
+    END; 
+  END IF; 
+END; 
+
